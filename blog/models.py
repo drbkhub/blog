@@ -8,3 +8,5 @@ class Article(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
 
+    class Meta:
+        ordering = ['-id']
