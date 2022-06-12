@@ -6,10 +6,12 @@
 
 {% block content %}
     <h1>{{ user.username }}</h1>
-    {% for article in articles %}
-        <li>{{ article.created|date }} - <a href="{% url 'article-detail' article.id %}">{{ article.title }}</a>
-        </li>
-    {% empty %}
-        <li>No articles yet.</li>
-    {% endfor %}
+    <ul>
+        {% for article in articles %}
+            <li>{{ article.created|date }} - <a href="{% url 'article-detail' article.id %}">{{ article.title }}</a>
+            </li>
+        {% empty %}
+            <li>No articles yet.</li>
+        {% endfor %}
+    </ul>
 {% endblock %}

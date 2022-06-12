@@ -4,6 +4,6 @@
 
 {% block content %}
     <h1>{{ object.title }}</h1>
-    <h2><a href="{% url 'user-detail' request.user.id %}">{{ object.author }}</a> - {{ object.created }}</h2>
+    <h2><a href="{% url 'user-detail' object.author.id %}">{{ object.author }}</a> - {{ object.created }}</h2>
     <p>{{ object.text }}</p>
 {% endblock %}
