@@ -111,7 +111,7 @@ USE_L10N = False
 LANGUAGE_CODE = 'ru-RU'
 
 # Пример вывода: 16 сентября 2012
-DATE_FORMAT = 'd E Y'
+DATE_FORMAT = 'd.m.Y'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

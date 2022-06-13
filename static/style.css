@@ -1,116 +1,16 @@
-h1 {
-    word-wrap: break-word;
-    color: rgba(0, 0, 0, .8);
-    font-family: CustomSansSerif, 'Lucida Grande', Arial, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 32px;
-    margin: 35px 21px 12px;
-    line-height: 34px;
+a.navbar-brand {
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-h2 {
-    word-wrap: break-word;
-    font-weight: 400;
-    font-family: CustomSansSerif, 'Lucida Grande', Arial, sans-serif;
-    font-size: 15px;
-    line-height: 18px;
-    color: #79828B;
-    margin: 12px 21px;
-    font-style: normal;
-}
-
-p {
-    cursor: text;
-    tab-size: 4;
-    text-align: inherit;
-    font-family: CustomSerif, Georgia, Cambria, 'Times New Roman', serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 1.58;
-    color: rgba(0, 0, 0, .8);
-    unicode-bidi: isolate;
+.nav-link {
     padding: 0;
-    counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
-    margin: 0 21px 12px;
-    word-wrap: break-word;
-    white-space: pre-wrap;
 }
 
-a {
-    font-family: CustomSerif, Georgia, Cambria, 'Times New Roman', serif;
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
     text-decoration: none;
-}
-
-li {
-    cursor: text;
-    tab-size: 4;
-    word-wrap: break-word;
-    font-family: CustomSerif, Georgia, Cambria, 'Times New Roman', serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    color: rgba(0, 0, 0, .8);
-    list-style: none;
-    margin-left: 30px;
-    margin-bottom: 14px;
-    position: relative;
-}
-
-div.navbar {
-    display: block;
-    align-items: center;
-    margin-top: 20px;
-
-}
-
-div.navbar a:link {
-    text-decoration: none;
-}
-
-div.navbar a:visited {
-    text-decoration: none;
-}
-
-div.navbar a:hover {
-    text-decoration: underline;
-}
-
-div.navbar a:active {
-    text-decoration: underline;
-}
-
-div.navbar a {
-    margin-left: 20px;
-    color: rgba(0, 0, 0, .8);
-    font-family: CustomSansSerif, 'Lucida Grande', Arial, sans-serif;
-    text-align: center;
-    font-size: 18px;
-
-}
-
-#logo {
-    width: 180px;
-    min-width: 100px;
-}
-
-div.navbar a.active {
-    color: rgba(0, 0, 0, .8);
-    font-family: CustomSansSerif, 'Lucida Grande', Arial, sans-serif;
-    font-weight: 700;
-    text-decoration-line: underline;
-    text-decoration-thickness: 2px;
-
-
-}
-
-div.navbar > a.active {
-    border-color: rgba(0, 0, 0, .8);
-}
-
-div.content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 920px;
+    box-shadow: 0 0 0 0;
 }
