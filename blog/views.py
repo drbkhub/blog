@@ -33,3 +33,7 @@ class UserDetailView(DetailView):
         context = super().get_context_data(**kwargs)
         context['articles'] = Article.objects.filter(author__id=self.object.id)
         return context
+
+
+def about(request):
+    return render(request, template_name='blog/about.html')
