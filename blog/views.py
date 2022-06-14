@@ -24,14 +24,16 @@ class ArticleDetailView(DetailView):
     #     return context
 
 
-class UserDetailView(DetailView):
-    model = User
-    template_name = 'blog/user_detail.html'
+class UserArticlesListView(ListView):
+    model = Article
+    template_name = 'blog/user_articles_list.html'
+    paginate_by = 1
+
+    def get_queryset(self):
+        queryset = Article.objects.filter(author__id=self.kwargs.get("pk"))
+        return queryset
 
     def get_context_data(self, **kwargs):
-        self
         context = super().get_context_data(**kwargs)
-        context['articles'] = Article.objects.filter(author__id=self.object.id)
+        context['user'] = User.objects.get(pk=self.kwargs.get("pk"))
         return context
-
-
