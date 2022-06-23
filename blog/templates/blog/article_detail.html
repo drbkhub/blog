@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block content %}
-    <h1>{{ object.title }}</h1>
-    <h2><a href="{% url 'user-articles-list' object.author.id %}">{{ object.author }}</a> - {{ object.created|date|upper }}</h2>
+    <h4>{{ object.title }}</h4>
+    <h6><a href="{% url 'user-articles-list' object.author.id %}">{{ object.author }}</a> - {{ object.created|date|upper }}</h6>
     <p>{{ object.text }}</p>
 {% endblock %}

@@ -4,12 +4,5 @@
 {% endblock %}
 
 {% block content %}
-    <ul>
-        {% for article in object_list %}
-            <li>{{ article.created|date|upper }} - <a href="{% url 'article-detail' article.id %}">{{ article.title }}</a>
-            </li>
-        {% empty %}
-            <li>No articles yet.</li>
-        {% endfor %}
-    </ul>
+    {% include 'blog/articles.html' %}
 {% endblock %}

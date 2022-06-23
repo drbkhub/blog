@@ -1,4 +1,4 @@
-<a class="nav-link {% if request.resolver_match.view_name == 'article-list' %}active{% endif %}"
+<a class="nav-link{% if request.resolver_match.view_name == 'article-list' %} active{% endif %}"
    aria-current="page" href="{% url 'article-list' %}">СТАТЬИ</a>
-<a class="nav-link {% if request.resolver_match.view_name == 'about' %}active{% endif %}"
+<a class="nav-link{% if request.resolver_match.view_name == 'about' %} active{% endif %}"
    href="{% url 'about' %}">О ПРОЕКТЕ</a>

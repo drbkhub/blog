@@ -2,6 +2,10 @@ a.navbar-brand {
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
+a.navbar-brand.active {
+    text-decoration: underline;
+}
+
 .nav-link {
     padding: 0;
 }
@@ -13,4 +17,26 @@ a.navbar-brand {
 .navbar-toggler:focus {
     text-decoration: none;
     box-shadow: 0 0 0 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+div.navbar-nav a:hover, .nav-link.active {
+    background-color: lightsteelblue;
+    color: white;
+}
+
+.content a:hover {
+    background-color: #eeeeee;
+    color: black;
+}
+
+.content a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
 }
